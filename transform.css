@@ -1,0 +1,33 @@
+/* Ir divas datnes - transform.html un transform.css.
+*  Izveido, lūdzu, 4 kvadrātus. Katra lielums ir
+*  100x100 px un tie ir visforšākajā krāsā!
+*
+*  Tad ar katru kvadrātu izdari to, kas prasīts HTML.
+*/
+
+article {
+  margin-top: 120px;
+}
+div{
+  width: 100px;
+  height: 100px;
+  background-color: rgb(0, 174, 255);
+  transition: width 0.5s, height 0.5s, transform 0.5s;
+}
+ 
+.square-1:hover{
+  height: 200px;
+  width: 200px;
+}
+.square-2:hover{
+  transform: rotate(45deg);
+}
+.square-3:hover{
+  transform: translateX(100px) translateY(-50px);
+}
+.square-4{
+  transform-origin: bottom right;
+}
+.square-4:hover{
+  transform: rotate(90deg);
+}
