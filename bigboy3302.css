@@ -1,0 +1,164 @@
+body {
+	background-color: #fff;
+	background-image: linear-gradient(to right, #2c3e50, #2980b9, #8e44ad, #f39c12, #c0392b);
+	background-size: 1000% 1000%;
+	animation: gradient 20s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+header {
+	background-color: #000000;
+	color: #fff;
+}
+
+nav {
+	display: flex;
+	justify-content: center; /* center the navigation links */
+	align-items: center;
+	padding: 10px;
+}
+
+nav .logo {
+	flex: 1;
+	font-size: 24px;
+}
+
+nav label {
+	display: none;
+	cursor: pointer;
+	font-size: 24px;
+}
+
+nav .menu {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav .menu li {
+	margin: 0 10px;
+}
+
+nav .menu a {
+	color: #fff;
+	text-decoration: none;
+	position: relative;
+}
+
+nav .menu a::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: -5px;
+	left: 0;
+	background-color: #fff;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform 0.3s ease;
+}
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    background-color: lightgreen;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #666;
+    margin: 0;
+    padding: 1.5rem 2rem;
+    background-color: violet;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  p img:not(:first-child) {
+    display: none;
+    width: 100px;
+    height: 100px;
+  }
+  
+  p:hover img {
+    display: none;
+  }
+  
+  p:hover img:first-child {
+    display: block;
+  }
+
+nav .menu a:hover::before {
+	transform: scaleX(1);
+}
+
+nav .menu-icon {
+	display: none;
+	color: #fff;
+	font-size: 24px;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+	nav .logo {
+		font-size: 20px;
+	}
+
+	nav label {
+		display: block;
+	}
+
+	nav .menu {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 60px);
+        flex-direction: column;
+        background-color: #222;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+    
+    nav .menu li {
+        margin: 20px 0;
+    }
+    
+    nav .menu a {
+        font-size: 18px;
+    }
+    
+    nav .menu-icon {
+        display: block;
+    }
+    
+    input:checked ~ .menu {
+        transform: translateX(0);
+    }
+    }
+    
+    @media screen and (min-width: 769px) {
+    nav label {
+    display: none;
+    }
+    nav .menu-icon {
+        display: none;
+    }
+    }
