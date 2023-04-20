@@ -1,18 +1,33 @@
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 2;
+  border-style: solid;
+}
 body {
-    background-color: #000;
-    animation: background-animation 5s ease-in-out infinite;
-  }
-  
-  @keyframes background-animation {
-    0% {
-      background-color: #ff0000;
-    }
-    50% {
-      background-color: #00ff00;
-    }
-    100% {
-      background-color: #0000ff;
-    }
+	background-color: #fff;
+	background-image: linear-gradient(to right, #2c3e50, #2980b9, #8e44ad, #f39c12, #c0392b);
+	background-size: 1000% 1000%;
+	animation: gradient 20s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+  main{
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left:auto;
   }
   .rotate-square {
     width: 100px;
@@ -162,14 +177,14 @@ body {
   font-size: 24px;
   }
   
-  nav .nav-toggle {
+  nav .check {
   display: block;
   margin-right: 10px;
   }
   }
   
-  @media screen and (max-width: 480px) {
-  nav .nav-header {
+  
+  nav .check {
   flex-direction: column;
   align-items: flex-start;
   }
@@ -177,4 +192,42 @@ body {
   nav .nav-title {
   margin-bottom: 10px;
   }
-  }
+  
+  
+  .burger{
+    display: none;
+}
+@media(max-width:200px){
+    .burger{
+        display: block;
+    }
+    ul{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+        margin: 0;
+        width: 100vw;
+        padding-left: 0;
+        align-items: center;
+        display: none;
+    }
+    li{
+        padding-bottom: 20px;
+    }
+    .check{
+        display: block;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 40px;
+        height: 40px;
+        opacity: 0;
+        cursor: pointer;
+        z-index: 10;
+    }
+    .check:checked~ul{
+        display: flex;
+    }
+}

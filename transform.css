@@ -4,7 +4,9 @@
 *
 *  Tad ar katru kvadrātu izdari to, kas prasīts HTML.
 */
-
+body{
+  background-color: blueviolet;
+}
 article {
   margin-top: 120px;
 }
