@@ -24,7 +24,7 @@ header {
 
 nav {
 	display: flex;
-	justify-content: center; /* center the navigation links */
+	justify-content: center; 
 	align-items: center;
 	padding: 10px;
 }
