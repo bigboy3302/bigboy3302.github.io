@@ -200,7 +200,7 @@ body {
 .check{
   display:none;
 }
-@media(max-width:200px){
+@media(max-width:800px){
     .burger{
         display: block;
     }
@@ -228,7 +228,7 @@ body {
         height: 40px;
         opacity: 0;
         cursor: pointer;
-        z-index: 10;
+        z-index: 20;
     }
     .check:checked~ul{
         display: flex;
