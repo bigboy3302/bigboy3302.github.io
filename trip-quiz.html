@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="lv" data-theme="light" id="html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bigboy3302</title>
+    <link rel="stylesheet" href="trip-quiz.css" />
+    <script src="trip-quiz.js" defer></script>
+</head>
+<body id="body">
+  <header>
+	<h1>quize par valstim 🌎</h1>
+	<input type="checkbox" id="toggle-theme" />
+	<label for="toggle-theme">
+	  <img src="sick_FILL0_wght400_GRAD0_opsz48.png" id="sun" />
+	  <img src="sentiment_very_satisfied_FILL0_wght400_GRAD0_opsz48.png" id="moon" />
+	</label>
+  </header>
+  <main>
+	<section>
+	  <div id="supergrid">
+		<h1>Kurš galamērķis atrodas uz 17 508 salām?</h1>
+		<div id="box-grid">
+		  <div id="igaunija">
+			<input
+			  type="radio"
+			  onclick="getValue()"
+			  name="check"
+			  id="check1"
+			/><label for="check1">Igaunija </label>
+		  </div>
+		  <div id="lielbritanija">
+			<input
+			  type="radio"
+			  onclick="getValue()"
+			  name="check"
+			  id="check2"
+			/><label for="check2">Lielbritānija</label>
+		  </div>
+		  <div id="liepaja">
+			<input
+			  type="radio"
+			  onclick="getValue()"
+			  name="check"
+			  id="check3"
+			/><label for="check3">Liepāja</label>
+		  </div>
+		  <div id="indonezija">
+			<input
+			  type="radio"
+			  onclick="getValue()"
+			  name="check"
+			  id="check4"
+			/><label for="check4">Indonēzija</label>
+		  </div>
+		</div>
+	  </div>
+	</section>
+	<section>
+	  <div id="supergrid">
+		<h1>Kurš galamērķis ir vienlaicīgi gan kontinents, gan valsts?</h1>
+		<div id="box-grid">
+		  <div id="liepaja2">
+			<input
+			  type="radio"
+			  onclick="getValue2()"
+			  name="check2"
+			  id="check5"
+			/><label for="check5">Liepāja</label>
+		  </div>
+		  <div id="australija">
+			<input
+			  type="radio"
+			  onclick="getValue2()"
+			  name="check2"
+			  id="check6"
+			/><label for="check6">Austrālija</label>
+		  </div>
+		  <div id="lietuva">
+			<input
+			  type="radio"
+			  onclick="getValue2()"
+			  name="check2"
+			  id="check7"
+			/><label for="check7">Lietuva</label>
+		  </div>
+		  <div id="kanada">
+			<input
+			  type="radio"
+			  onclick="getValue2()"
+			  name="check2"
+			  id="check8"
+			/><label for="check8">Kanāda</label>
+		  </div>
+		</div>
+	  </div>
+	</section>
+	<section>
+	  <div id="supergrid">
+		<h1>
+		  Pie kura galamērķa ir īpašī aizsargājama ūdensputnu ligzdošanas
+		  teritorija, kas iekļauta "Natura 2000"?
+		</h1>
+		<div id="box-grid">
+		  <div id="libija">
+			<input
+			  type="radio"
+			  onclick="getValue3()"
+			  name="check3"
+			  id="check9"
+			/><label for="check9">Lībija</label>
+		  </div>
+		  <div id="kina">
+			<input
+			  type="radio"
+			  onclick="getValue3()"
+			  name="check3"
+			  id="check10"
+			/><label for="check10">Ķīna</label>
+		  </div>
+		  <div id="liepaja3">
+			<input
+			  type="radio"
+			  onclick="getValue3()"
+			  name="check3"
+			  id="check11"
+			/><label for="check11">Liepāja</label>
+		  </div>
+		  <div id="cile">
+			<input
+			  type="radio"
+			  onclick="getValue3()"
+			  name="check3"
+			  id="check12"
+			/><label for="check12">Čīle</label>
+		  </div>
+		</div>
+	  </div>
+	</section>
+  </main>
+</body>
+</html>

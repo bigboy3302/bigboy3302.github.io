@@ -1,0 +1,291 @@
+html {
+	--header-height: 60px;
+	--box-height: 100px;
+	--box-width: 250px;
+	--box-radius: 15px;
+	scroll-snap-type: y mandatory;
+  }
+  section {
+	height: 100vh;
+	scroll-snap-align: start;
+	scroll-snap-stop: normal;
+	/*scroll-margin-top: var(--header-height);*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  html[data-theme="light"] {
+	--primary-color: #eecdb4;
+	--body-color: #f0edd4;
+	--box-color: #f9fbe7;
+	--text-color: black;
+	--sun: block;
+	--moon: none;
+  }
+  
+  html[data-theme="dark"] {
+	--primary-color: #5c469c;
+	--body-color: #1d267d;
+	--box-color: #0c134f;
+	--text-color: white;
+	--sun: none;
+	--moon: block;
+  }
+  body {
+	margin: 0;
+	background-color: var(--body-color);
+  }
+  header {
+	width: 100vw;
+	height: var(--header-height);
+	background-color: var(--primary-color);
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  main {
+	margin-top: var(--header-height);
+  }
+  
+  p {
+	color: var(--text-color);
+  }
+  h1 {
+	color: var(--text-color);
+	font-size: 30px;
+  }
+  h2 {
+	color: var(--text-color);
+  }
+  #igaunija {
+	background-color: var(--box-color);
+	height: var(--box-height);
+	width: var(--box-width);
+	border-radius: var(--box-radius);
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	transition: transform 0.5s;
+  }
+  #lielbritanija {
+	background-color: var(--box-color);
+	height: var(--box-height);
+	width: var(--box-width);
+	border-radius: var(--box-radius);
+	grid-column: 2;
+	grid-row: 1;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	transition: transform 0.5s;
+  }
+  #liepaja {
+	background-color: var(--box-color);
+	height: var(--box-height);
+	width: var(--box-width);
+	border-radius: var(--box-radius);
+	grid-column: 1;
+	grid-row: 2;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	transition: transform 0.5s;
+  }
+  #indonezija {
+	background-color: var(--box-color);
+	height: var(--box-height);
+	width: var(--box-width);
+	border-radius: var(--box-radius);
+	grid-column: 2;
+	grid-row: 2;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	transition: transform 0.5s;
+  }
+  #liepaja2 {
+	background-color: var(--box-color);
+	height: var(--box-height);
+	width: var(--box-width);
+	border-radius: var(--box-radius);
+	grid-column: 1;
+	grid-row: 1;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	transition: transform 0.5s;
+  }
+  #australija {
+	background-color: var(--box-color);
+	height: var(--box-height);
+	width: var(--box-width);
+	border-radius: var(--box-radius);
+	grid-column: 2;
+	grid-row: 1;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	transition: transform 0.5s;
+  }
+  #lietuva {
+	background-color: var(--box-color);
+	height: var(--box-height);
+	width: var(--box-width);
+	border-radius: var(--box-radius);
+	grid-column: 1;
+	grid-row: 2;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	transition: transform 0.5s;
+  }
+  #kanada {
+	background-color: var(--box-color);
+	height: var(--box-height);
+	width: var(--box-width);
+	border-radius: var(--box-radius);
+	grid-column: 2;
+	grid-row: 2;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	transition: transform 0.5s;
+  }
+  #libija {
+	background-color: var(--box-color);
+	height: var(--box-height);
+	width: var(--box-width);
+	border-radius: var(--box-radius);
+	grid-column: 1;
+	grid-row: 1;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	transition: transform 0.5s;
+  }
+  #kina {
+	background-color: var(--box-color);
+	height: var(--box-height);
+	width: var(--box-width);
+	border-radius: var(--box-radius);
+	grid-column: 2;
+	grid-row: 1;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	transition: transform 0.5s;
+  }
+  #liepaja3 {
+	background-color: var(--box-color);
+	height: var(--box-height);
+	width: var(--box-width);
+	border-radius: var(--box-radius);
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	transition: transform 0.5s;
+  }
+  #cile {
+	background-color: var(--box-color);
+	height: var(--box-height);
+	width: var(--box-width);
+	border-radius: var(--box-radius);
+	grid-column: 2;
+	grid-row: 2;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	transition: transform 0.5s;
+  }
+  #box-grid {
+	display: grid;
+	grid-template-columns: 2;
+	grid-template-rows: 2;
+	width: 500px;
+	gap: 30px;
+  }
+  #toggle-theme {
+	width: 50px;
+	opacity: 0%;
+  }
+  #sun {
+	display: var(--sun);
+	margin-right: 25px;
+	position: absolute;
+	right: 0;
+	top: 5px;
+  }
+  #moon {
+	display: var(--moon);
+	margin-right: 25px;
+	position: absolute;
+	right: 0;
+	top: 5px;
+  }
+  #supergrid {
+	display: grid;
+	justify-content: center;
+	justify-items: center;
+	grid-template-columns: 0.5fr;
+	grid-template-rows: 1fr;
+  }
+  #textgrid {
+	display: grid;
+	justify-content: center;
+	justify-items: center;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+  }
+  label {
+	font-size: 25px;
+	color: var(--text-color);
+	text-align: center;
+  }
+  
+  input[type="radio"] {
+	width: 300px;
+	height: 100px;
+	display: none;
+  }
+  
+  #igaunija:hover {
+	transform: scale(1.2);
+  }
+  #lielbritanija:hover {
+	transform: scale(1.2);
+  }
+  #liepaja:hover {
+	transform: scale(1.2);
+  }
+  #indonezija:hover {
+	transform: scale(1.2);
+  }
+  #liepaja2:hover {
+	transform: scale(1.2);
+  }
+  #australija:hover {
+	transform: scale(1.2);
+  }
+  #lietuva:hover {
+	transform: scale(1.2);
+  }
+  #kanada:hover {
+	transform: scale(1.2);
+  }
+  #libija:hover {
+	transform: scale(1.2);
+  }
+  #kina:hover {
+	transform: scale(1.2);
+  }
+  #liepaja3:hover {
+	transform: scale(1.2);
+  }
+  #cile:hover {
+	transform: scale(1.2);
+  }
