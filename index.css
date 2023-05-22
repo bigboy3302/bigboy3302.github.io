@@ -1,3 +1,6 @@
+html{
+scroll-snap-type: y mandatory;
+}
 header{
   position: fixed;
   top: 0;
@@ -141,6 +144,8 @@ body {
     align-items: center;
     justify-content: center;
     color: #fff;
+	 scroll-snap-align: start;
+	scroll-snap-stop: normal;
   }
   
   section h1, section h2 {
