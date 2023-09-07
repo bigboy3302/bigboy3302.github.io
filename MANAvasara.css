@@ -1,0 +1,145 @@
+html{
+    scroll-snap-type: y mandatory;
+    }
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 45px;
+  width: 100vw;
+  z-index: 2;
+  border-style: solid;
+}
+body {
+	background-color: #fff;
+	background-image: linear-gradient(to right, #21b5a6, #610e8e, #d8abbf, #a7b150, #8e60e4);
+	background-size: 1000% 1000%;
+	animation: gradient 20s ease infinite;
+ 
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+nav a{
+    font-size: 50px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 2;
+    border-style: solid;
+  }
+
+  nav {
+    background-color: #fff;
+	background-image: linear-gradient(to right, #21b5a6, #610e8e, #d8abbf, #a7b150, #8e60e4);
+	background-size: 1000% 1000%;
+	animation: gradient 20s ease infinite;    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    border-width:2px;
+    text-align: center;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+  }
+  
+  nav a:hover {
+    color: #a6a965;
+    background-color: #00ffe5;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+  }
+  section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+	 scroll-snap-align: start;
+	scroll-snap-stop: normal;
+  }
+  
+  section h1, section h2 {
+    font-size: 50px;
+    margin: 0;
+  }
+  
+  section p {
+    font-size: 20px;
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    nav .nav-menu {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+     
+  }
+  nav a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  }
+  }
+  
+  nav .nav-title {
+  margin-bottom: 10px;
+  }
+  .image-slider {
+    width: 300px; /* Set your desired image slider width */
+    height: 200px; /* Set your desired image slider height */
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-image {
+    width: 100%;
+    height: 100%;
+    
+    position: absolute;
+    animation: imageSlider 6s infinite; /* Change images every 2 seconds (2 * 3 images) */
+}
+.slider-image2 {
+    width: 45%;
+    height: 40%;
+    
+    position: absolute;
+    animation: imageSlider 6s infinite; /* Change images every 2 seconds (2 * 3 images) */
+}
+@keyframes imageSlider {
+    0% {
+        opacity: 1;
+    }
+    33.33% {
+        opacity: 0;
+    }
+    66.66% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
